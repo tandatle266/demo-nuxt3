@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'SERVICE-NAME', '--image', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project', '--region', 'us-central1']
+  args: ['run', 'deploy', '$_SERVICE_NAME', '--image', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project', '--region', 'us-central1']
 images:
 - us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project
