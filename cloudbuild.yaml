@@ -4,7 +4,7 @@ steps:
   args: ['build', '-t', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project ']
+  args: ['push', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project:lastest ']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
