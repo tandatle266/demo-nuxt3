@@ -1,7 +1,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project', '--build-arg=ENV=$_ENV', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/plogg-vn/cloud-run-source-deploy/demo-nuxt3/dat-demo-project']
