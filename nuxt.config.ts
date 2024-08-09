@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       stripePublicKey: process.env.STRIPE_PUBLIC_KEY,
+      MY_ENV_VARIABLE: process.env.MY_ENV_VARIABLE
     },
     private: {
       stripeSecretKey: process.env.STRIPE_SECRET_KEY,
