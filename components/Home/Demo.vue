@@ -5,7 +5,7 @@
 				config {{ $config }}
 			</div>
 			<div>
-				ENV {{ process.env }}
+				ENV {{ process?.env }}
 			</div>
 	</div>
 </template>
