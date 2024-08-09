@@ -1,6 +1,12 @@
 <template>
 	<div>
-			Home
+			Home Page
+			<div>
+				public key {{ $config.public.stripePublicKey }}
+			</div>
+			<div>
+				config {{ $config }}
+			</div>
 	</div>
 </template>
 
