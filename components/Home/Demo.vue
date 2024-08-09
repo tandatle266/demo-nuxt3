@@ -2,10 +2,10 @@
 	<div>
 			Home Page
 			<div>
-				public key {{ $config.public.stripePublicKey }}
+				config {{ $config }}
 			</div>
 			<div>
-				config {{ $config }}
+				ENV {{ process.env }}
 			</div>
 	</div>
 </template>
